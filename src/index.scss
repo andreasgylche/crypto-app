@@ -30,3 +30,21 @@ h1 {
   font-size: $font-h1;
   font-weight: $medium;
 }
+
+// Header component
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+
+  select {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: $theme-on-surface;
+    appearance: none;
+    font-size: $font-small;
+    font-weight: $medium;
+  }
+}
