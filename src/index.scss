@@ -38,13 +38,31 @@ header {
   align-items: center;
   margin-top: 24px;
 
-  select {
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
+  .select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $theme-on-surface;
-    appearance: none;
-    font-size: $font-small;
-    font-weight: $medium;
+    position: relative;
+    border-radius: 8px;
+
+    select {
+      appearance: none;
+      border: none;
+      background-color: transparent;
+      padding: 8px 26px 8px 8px;
+      font-size: $font-small;
+      font-weight: $medium;
+      cursor: pointer;
+
+      option {
+        background-color: $theme-on-surface;
+      }
+    }
+    svg {
+      position: absolute;
+      right: 6px;
+      pointer-events: none;
+    }
   }
 }
