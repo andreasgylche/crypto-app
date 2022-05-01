@@ -1,27 +1,19 @@
 // THEME VARIABLES
 
 // Default theme (light)
-$light-theme-background: #ffffff;
-$light-theme-on-surface: #f4f4f4;
-$light-theme-body-secondary: #828282;
-$light-theme-body-primary: #111111;
-$light-theme-increase: #35b433;
-$light-theme-decrease: #e74c3c;
-
-// Secondary theme (dark)
-$dark-theme-background: #111111;
-$dark-theme-on-surface: #2f2f2f;
-$dark-theme-body-secondary: #888888;
-$dark-theme-body-primary: #ffffff;
-$dark-theme-increase: #35b433;
-$dark-theme-decrease: #e74c3c;
+$theme-background: #ffffff;
+$theme-on-surface: #f4f4f4;
+$theme-body-secondary: #828282;
+$theme-body-primary: #111111;
+$theme-increase: #35b433;
+$theme-decrease: #e74c3c;
 
 // Margins
-$marin-sm: 8px;
-$marin-md: 16px;
-$marin-lg: 24px;
-$marin-xl: 32px;
-$marin-xxl: 64px;
+$margin-sm: 8px;
+$margin-md: 16px;
+$margin-lg: 24px;
+$margin-xl: 32px;
+$margin-xxl: 64px;
 
 // Font stack
 $sans-serif: "Poppins", "Montserrat", sans-serif;

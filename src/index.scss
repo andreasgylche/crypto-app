@@ -2,3 +2,31 @@
 @import "./sass/reset.scss";
 @import "./sass/breakpoints.scss";
 @import "./sass/variables.scss";
+
+// Globals start
+body {
+  font-family: $sans-serif;
+  font-weight: $medium;
+  color: $theme-body-primary;
+  background: $theme-background;
+  -webkit-text-size-adjust: 100%; //fix for iOS
+  margin: 0 15vw; //change later
+}
+
+.brand {
+  font-size: $font-brand;
+  font-weight: $medium;
+}
+
+p {
+  font-size: $font-body;
+}
+
+p.small {
+  font-size: $font-small;
+}
+
+h1 {
+  font-size: $font-h1;
+  font-weight: $medium;
+}
