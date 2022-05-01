@@ -1,0 +1,38 @@
+// THEME VARIABLES
+
+// Default theme (light)
+$light-theme-background: #ffffff;
+$light-theme-on-surface: #f4f4f4;
+$light-theme-body-secondary: #828282;
+$light-theme-body-primary: #111111;
+$light-theme-increase: #35b433;
+$light-theme-decrease: #e74c3c;
+
+// Secondary theme (dark)
+$dark-theme-background: #111111;
+$dark-theme-on-surface: #2f2f2f;
+$dark-theme-body-secondary: #888888;
+$dark-theme-body-primary: #ffffff;
+$dark-theme-increase: #35b433;
+$dark-theme-decrease: #e74c3c;
+
+// Margins
+$marin-sm: 8px;
+$marin-md: 16px;
+$marin-lg: 24px;
+$marin-xl: 32px;
+$marin-xxl: 64px;
+
+// Font stack
+$sans-serif: "Poppins", "Montserrat", sans-serif;
+
+// Font sizes
+$font-small: 14pt;
+$font-body: 16pt;
+$font-brand: 20pt;
+$font-h1: 24pt;
+
+// Font weights
+$regular: 400;
+$medium: 500;
+$bold: 700;
