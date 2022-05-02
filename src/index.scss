@@ -67,3 +67,74 @@ header {
     }
   }
 }
+
+// Search component
+.search-container {
+  margin-top: $margin-xxl;
+
+  form {
+    input {
+      width: 100%;
+      font-family: $sans-serif;
+      font-size: $font-body;
+      font-weight: $medium;
+      padding: $margin-lg;
+      border-radius: 8px;
+      border: none;
+      background-color: $theme-on-surface;
+    }
+  }
+}
+
+// Coin component
+.coins-container {
+  margin-top: $margin-xxl;
+  display: flex;
+  flex-direction: column;
+  gap: $margin-sm;
+
+  .coin-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: $theme-on-surface;
+    padding: $margin-sm;
+    border-radius: 8px;
+    font-size: $font-body;
+
+    .coin-info {
+      display: flex;
+      align-items: center;
+
+      .coin-rank {
+        margin-right: $margin-lg;
+      }
+      .coin-image {
+        height: 32px;
+        width: 32px;
+        margin-right: $margin-md;
+      }
+      .coin-name {
+        margin-right: $margin-sm;
+      }
+      .coin-ticker {
+        text-transform: uppercase;
+      }
+    }
+    .coin-data {
+      display: flex;
+      align-items: center;
+      width: 50%;
+
+      .coin-price {
+        flex: 1;
+      }
+      .coin-price-change {
+        flex: 1;
+      }
+      .coin-market-cap {
+        flex: 2;
+        align-self: flex-end;
+      }
+    }
+  }
+}

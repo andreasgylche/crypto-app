@@ -15,6 +15,8 @@ export default function Header({ setCurrency, currency }) {
           <option value="usd">USD</option>
           <option value="eur">EUR</option>
           <option value="dkk">DKK</option>
+          <option value="jpy">JPY</option>
+          <option value="btc">BTC</option>
         </select>
         <TiArrowSortedDown />
       </div>
