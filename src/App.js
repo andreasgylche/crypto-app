@@ -8,11 +8,12 @@ import Coin from "./components/Coin";
 function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
+  const [currency, setCurrency] = useState("usd");
 
   useEffect(() => {
     axios
       .get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false`
       )
       .then((res) => {
         setCoins(res.data);
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header setCurrency={setCurrency} currency={currency} />
       <Search setSearch={setSearch} />
       <div className="coins-container">
         {filteredCoins.map((coin) => {
