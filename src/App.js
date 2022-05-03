@@ -35,6 +35,18 @@ function App() {
       <Header setCurrency={setCurrency} currency={currency} />
       <Search setSearch={setSearch} />
       <div className="coins-container">
+        <h1>Top 100 cryptocurrencies by market cap</h1>
+        <div className="table-container">
+          <div className="table-info">
+            <span className="field-rank">#</span>
+            <span className="field-name">Coin</span>
+          </div>
+          <div className="table-data">
+            <span className="field-price">Price</span>
+            <span className="field-price-change">24h</span>
+            <span className="field-market-cap">Market cap</span>
+          </div>
+        </div>
         {filteredCoins.map((coin) => {
           return (
             <Coin
@@ -46,6 +58,7 @@ function App() {
               price={coin.current_price}
               priceChange={coin.price_change_percentage_24h}
               marketCap={coin.market_cap}
+              currency={currency}
             />
           );
         })}

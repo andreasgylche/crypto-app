@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Coin({
   rank,
@@ -8,7 +8,25 @@ export default function Coin({
   price,
   priceChange,
   marketCap,
+  currency,
 }) {
+  const getFiatCurrency = (currency) => {
+    if (currency == "eur") {
+      return "€";
+    }
+    if (currency == "dkk") {
+      return "DKK ";
+    }
+    if (currency == "jpy") {
+      return "JPY ";
+    }
+    if (currency == "btc") {
+      return "BTC ";
+    } else {
+      return "$";
+    }
+  };
+
   return (
     <div className="coin-container">
       <div className="coin-info">
@@ -18,8 +36,15 @@ export default function Coin({
         <span className="coin-ticker">{ticker}</span>
       </div>
       <div className="coin-data">
-        <p className="coin-price">{price}</p>
-        <p className="coin-price-change">{priceChange.toFixed(2)}%</p>
+        <p className="coin-price">
+          {getFiatCurrency(currency)}
+          {price}
+        </p>
+        {priceChange < 0 ? (
+          <p className="coin-price-change red">{priceChange.toFixed(2)}%</p>
+        ) : (
+          <p className="coin-price-change green">{priceChange.toFixed(2)}%</p>
+        )}
         <p className="coin-market-cap">${marketCap.toLocaleString()}</p>
       </div>
     </div>
